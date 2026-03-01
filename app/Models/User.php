@@ -25,4 +25,9 @@ class User extends Authenticatable
     {
         return $this->contrasenia;
     }
+
+    public function recordatorios()
+{
+    return $this->hasMany(Recordatorio::class);
+}
 }
